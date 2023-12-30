@@ -59,7 +59,7 @@
     "@mx-space/api-client": "1.3.5",
     "axios": "0.27.2",
     "clsx": "1.2.1",
-    "dayjs": "1.11.7",
+    "dayjs": "1.11.10",
     "framer-motion": "^10.3.0",
     "immer": "^9.0.19",
     "js-cookie": "3.0.1",
