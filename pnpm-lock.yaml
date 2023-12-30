@@ -16,7 +16,7 @@ specifiers:
   '@types/markdown-escape': 1.1.3
   '@types/node': 18.14.1
   '@types/react': 17.0.53
-  '@types/react-collapse': 5.0.1
+  '@types/react-collapse': 5.0.4
   '@types/react-dom': 18.0.11
   '@types/remove-markdown': 0.3.1
   '@types/validator': 13.7.12
@@ -96,7 +96,7 @@ devDependencies:
   '@types/markdown-escape': 1.1.3
   '@types/node': 18.14.1
   '@types/react': 17.0.53
-  '@types/react-collapse': 5.0.1
+  '@types/react-collapse': 5.0.4
   '@types/react-dom': 18.0.11
   '@types/remove-markdown': 0.3.1
   '@types/validator': 13.7.12
@@ -1465,8 +1465,8 @@ packages:
     resolution: {integrity: sha512-PtrlVaOaI44/3pl3cvnlK+GxOM3re2526TJvPvh7W+keHIXdV4TE0ylpPBAcvFQCbGitaTXwL9u+RF7qtVeazQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/ps-tree/-/ps-tree-1.1.6.tgz}
     dev: true
 
-  /@types/react-collapse/5.0.1:
-    resolution: {integrity: sha512-Iq3OrqvzCIP0DmAawU4T2VKH6XAplbjo/D7Qk14mcfQ92plU+OrA2SF10r2XrcFg1Wvya/5f8w1vS29RVpdoLQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/react-collapse/-/react-collapse-5.0.1.tgz}
+  /@types/react-collapse/5.0.4:
+    resolution: {integrity: sha512-tM5cVB6skGLneNYnRK2E3R56VOHguSeJQHslGPTIMC58ytL3oelT8L/l1onkwHGn5vSEs2BEq2Olzrur+YdliA==}
     dependencies:
       '@types/react': 17.0.53
     dev: true
