@@ -69,7 +69,7 @@
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-intersection-observer": "9.4.3",
+    "react-intersection-observer": "9.5.3",
     "react-masonry-css": "1.0.16",
     "react-message-popup": "1.0.0",
     "react-toastify": "9.1.1",
