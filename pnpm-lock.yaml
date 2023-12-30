@@ -24,7 +24,7 @@ specifiers:
   clsx: 1.2.1
   cross-env: 7.0.3
   dayjs: 1.11.7
-  dotenv: 16.0.3
+  dotenv: 16.3.1
   eslint: 8.35.0
   framer-motion: ^10.3.0
   husky: 8.0.3
@@ -101,7 +101,7 @@ devDependencies:
   '@types/remove-markdown': 0.3.4
   '@types/validator': 13.7.12
   cross-env: 7.0.3
-  dotenv: 16.0.3
+  dotenv: 16.3.1
   eslint: 8.35.0
   husky: 8.0.3
   js-yaml: 4.1.0
@@ -2294,8 +2294,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /dotenv/16.0.3:
-    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz}
+  /dotenv/16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
     engines: {node: '>=12'}
     dev: true
 
