@@ -73,7 +73,7 @@
     "react-masonry-css": "1.0.16",
     "react-message-popup": "1.0.0",
     "react-toastify": "9.1.1",
-    "react-use": "17.4.0",
+    "react-use": "17.4.2",
     "remove-markdown": "0.5.0",
     "socket.io-client": "4.6.1",
     "swr": "2.0.4",
@@ -113,7 +113,7 @@
     "zx": "7.2.0"
   },
   "resolutions": {
-    "react-use": "17.4.0",
+    "react-use": "17.4.2",
     "@types/react": "17.0.53"
   },
   "nextBundleAnalysis": {
