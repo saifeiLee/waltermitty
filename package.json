@@ -88,7 +88,7 @@
     "tailwindcss-variable-colors": "0.0.1",
     "autoprefixer": "10.4.14",
     "color": "4.2.3",
-    "@innei/eslint-config-react-ts": "0.9.7",
+    "@innei/eslint-config-react-ts": "0.12.0",
     "@innei/prettier": "0.9.7",
     "@next/bundle-analyzer": "13.2.1",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
