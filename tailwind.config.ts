@@ -1,3 +1,4 @@
+import daisyui from 'daisyui'
 import {
   createVariableColors,
   variableColorsPlugin,
@@ -167,7 +168,6 @@ const UIKitColors = {
   },
 }
 
-const UIKitMaterials = {}
 
 export default resolveConfig({
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -204,14 +204,10 @@ export default resolveConfig({
         screen: '100vh',
       },
 
-      zIndex: {
-        '-1': '-1',
-        1: '1',
-        99: '99',
-      },
       colors: {
         uk: UIKitColors,
         always: { ...twColors },
+        accent: '#39C5BB',
       },
     },
   },
@@ -221,7 +217,7 @@ export default resolveConfig({
     addShortcutPlugin,
 
     variableColorsPlugin(twColors),
-
+    daisyui,
     // ColorPlugin,
   ],
 })
