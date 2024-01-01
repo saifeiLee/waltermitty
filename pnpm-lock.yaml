@@ -45,7 +45,7 @@ specifiers:
   postcss: 8.4.32
   postcss-import: 15.1.0
   postcss-nested: 6.0.1
-  postcss-preset-env: 8.0.1
+  postcss-preset-env: 8.5.1
   postcss-prune-var: 1.1.1
   prettier: 2.8.4
   react: 18.2.0
@@ -117,7 +117,7 @@ devDependencies:
   postcss: 8.4.32
   postcss-import: 15.1.0_postcss@8.4.32
   postcss-nested: 6.0.1_postcss@8.4.32
-  postcss-preset-env: 8.0.1_postcss@8.4.32
+  postcss-preset-env: 8.5.1_postcss@8.4.32
   postcss-prune-var: 1.1.1
   prettier: 2.8.4
   rimraf: 3.0.2
@@ -527,6 +527,17 @@ packages:
       '@csstools/css-tokenizer': 2.2.2
     dev: true
 
+  /@csstools/css-calc/1.1.6_l6wgzxapoz635vj2t7gql2m44y:
+    resolution: {integrity: sha512-YHPAuFg5iA4qZGzMzvrQwzkvJpesXXyIUyaONflQrjtHB+BcFFbgltJkIkb31dMGO4SE9iZFA4HYpdk7+hnYew==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      '@csstools/css-parser-algorithms': ^2.5.0
+      '@csstools/css-tokenizer': ^2.2.3
+    dependencies:
+      '@csstools/css-parser-algorithms': 2.5.0_poxc63slm6mewnyrlqjmjvztkq
+      '@csstools/css-tokenizer': 2.2.3
+    dev: true
+
   /@csstools/css-color-parser/1.5.0_lrev6ic52p6t6jnlw6ejrpwp6y:
     resolution: {integrity: sha512-PUhSg1MgU2sjYhA6moOmxYesqVqYTJwcVw12boTNbDX7Af+VK02MkgvmBBY2Z2qU6UN5HOQ+wrF0qQJGsTFY7w==}
     engines: {node: ^14 || ^16 || >=18}
@@ -549,8 +560,22 @@ packages:
       '@csstools/css-tokenizer': 2.2.2
     dev: true
 
+  /@csstools/css-parser-algorithms/2.5.0_poxc63slm6mewnyrlqjmjvztkq:
+    resolution: {integrity: sha512-abypo6m9re3clXA00eu5syw+oaPHbJTPapu9C4pzNsJ4hdZDzushT50Zhu+iIYXgEe1CxnRMn7ngsbV+MLrlpQ==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      '@csstools/css-tokenizer': ^2.2.3
+    dependencies:
+      '@csstools/css-tokenizer': 2.2.3
+    dev: true
+
   /@csstools/css-tokenizer/2.2.2:
     resolution: {integrity: sha512-wCDUe/MAw7npAHFLyW3QjSyLA66S5QFaV1jIXlNQvdJ8RzXDSgALa49eWcUO6P55ARQaz0TsDdAgdRgkXFYY8g==}
+    engines: {node: ^14 || ^16 || >=18}
+    dev: true
+
+  /@csstools/css-tokenizer/2.2.3:
+    resolution: {integrity: sha512-pp//EvZ9dUmGuGtG1p+n17gTHEOqu9jO+FiCUjNN3BDmyhdA2Jq9QsVeR7K8/2QCK17HSsioPlTW9ZkzoWb3Lg==}
     engines: {node: ^14 || ^16 || >=18}
     dev: true
 
@@ -563,6 +588,17 @@ packages:
     dependencies:
       '@csstools/css-parser-algorithms': 2.4.0_fft3ycvs3yamh5xqz4lcgh6iqu
       '@csstools/css-tokenizer': 2.2.2
+    dev: true
+
+  /@csstools/media-query-list-parser/2.1.7_l6wgzxapoz635vj2t7gql2m44y:
+    resolution: {integrity: sha512-lHPKJDkPUECsyAvD60joYfDmp8UERYxHGkFfyLJFTVK/ERJe0sVlIFLXU5XFxdjNDTerp5L4KeaKG+Z5S94qxQ==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      '@csstools/css-parser-algorithms': ^2.5.0
+      '@csstools/css-tokenizer': ^2.2.3
+    dependencies:
+      '@csstools/css-parser-algorithms': 2.5.0_poxc63slm6mewnyrlqjmjvztkq
+      '@csstools/css-tokenizer': 2.2.3
     dev: true
 
   /@csstools/postcss-cascade-layers/3.0.1_postcss@8.4.32:
@@ -589,6 +625,19 @@ packages:
       postcss: 8.4.32
     dev: true
 
+  /@csstools/postcss-color-mix-function/1.0.3_postcss@8.4.32:
+    resolution: {integrity: sha512-QGXjGugTluqFZWzVf+S3wCiRiI0ukXlYqCi7OnpDotP/zaVTyl/aqZujLFzTOXy24BoWnu89frGMc79ohY5eog==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      '@csstools/css-color-parser': 1.5.0_lrev6ic52p6t6jnlw6ejrpwp6y
+      '@csstools/css-parser-algorithms': 2.4.0_fft3ycvs3yamh5xqz4lcgh6iqu
+      '@csstools/css-tokenizer': 2.2.2
+      '@csstools/postcss-progressive-custom-properties': 2.3.0_postcss@8.4.32
+      postcss: 8.4.32
+    dev: true
+
   /@csstools/postcss-font-format-keywords/2.0.2_postcss@8.4.32:
     resolution: {integrity: sha512-iKYZlIs6JsNT7NKyRjyIyezTCHLh4L4BBB3F5Nx7Dc4Z/QmBgX+YJFuUSar8IM6KclGiAUFGomXFdYxAwJydlA==}
     engines: {node: ^14 || ^16 || >=18}
@@ -597,6 +646,19 @@ packages:
     dependencies:
       postcss: 8.4.32
       postcss-value-parser: 4.2.0
+    dev: true
+
+  /@csstools/postcss-gradients-interpolation-method/3.0.6_postcss@8.4.32:
+    resolution: {integrity: sha512-rBOBTat/YMmB0G8VHwKqDEx+RZ4KCU9j42K8LwS0IpZnyThalZZF7BCSsZ6TFlZhcRZKlZy3LLFI2pLqjNVGGA==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      '@csstools/css-color-parser': 1.5.0_lrev6ic52p6t6jnlw6ejrpwp6y
+      '@csstools/css-parser-algorithms': 2.4.0_fft3ycvs3yamh5xqz4lcgh6iqu
+      '@csstools/css-tokenizer': 2.2.2
+      '@csstools/postcss-progressive-custom-properties': 2.3.0_postcss@8.4.32
+      postcss: 8.4.32
     dev: true
 
   /@csstools/postcss-hwb-function/2.2.2_postcss@8.4.32:
@@ -662,6 +724,19 @@ packages:
       postcss: 8.4.32
     dev: true
 
+  /@csstools/postcss-media-minmax/1.1.2_postcss@8.4.32:
+    resolution: {integrity: sha512-7qTRTJxW96u2yiEaTep1+8nto1O/rEDacewKqH+Riq5E6EsHTOmGHxkB4Se5Ic5xgDC4I05lLZxzzxnlnSypxA==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      '@csstools/css-calc': 1.1.6_l6wgzxapoz635vj2t7gql2m44y
+      '@csstools/css-parser-algorithms': 2.5.0_poxc63slm6mewnyrlqjmjvztkq
+      '@csstools/css-tokenizer': 2.2.3
+      '@csstools/media-query-list-parser': 2.1.7_l6wgzxapoz635vj2t7gql2m44y
+      postcss: 8.4.32
+    dev: true
+
   /@csstools/postcss-media-queries-aspect-ratio-number-values/1.0.4_postcss@8.4.32:
     resolution: {integrity: sha512-IwyTbyR8E2y3kh6Fhrs251KjKBJeUPV5GlnUKnpU70PRFEN2DolWbf2V4+o/B9+Oj77P/DullLTulWEQ8uFtAA==}
     engines: {node: ^14 || ^16 || >=18}
@@ -715,6 +790,19 @@ packages:
     dependencies:
       postcss: 8.4.32
       postcss-value-parser: 4.2.0
+    dev: true
+
+  /@csstools/postcss-relative-color-syntax/1.0.2_postcss@8.4.32:
+    resolution: {integrity: sha512-juCoVInkgH2TZPfOhyx6tIal7jW37L/0Tt+Vcl1LoxqQA9sxcg3JWYZ98pl1BonDnki6s/M7nXzFQHWsWMeHgw==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      '@csstools/css-color-parser': 1.5.0_lrev6ic52p6t6jnlw6ejrpwp6y
+      '@csstools/css-parser-algorithms': 2.4.0_fft3ycvs3yamh5xqz4lcgh6iqu
+      '@csstools/css-tokenizer': 2.2.2
+      '@csstools/postcss-progressive-custom-properties': 2.3.0_postcss@8.4.32
+      postcss: 8.4.32
     dev: true
 
   /@csstools/postcss-scope-pseudo-class/2.0.2_postcss@8.4.32:
@@ -1034,20 +1122,20 @@ packages:
     dev: true
 
   /@floating-ui/core/1.5.2:
-    resolution: {integrity: sha512-Ii3MrfY/GAIN3OhXNzpCKaLxHQfJF9qvwq/kEJYdqDxeIHa01K8sldugal6TmeeXl+WMvhv9cnVzUTaFFJF09A==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-Ii3MrfY/GAIN3OhXNzpCKaLxHQfJF9qvwq/kEJYdqDxeIHa01K8sldugal6TmeeXl+WMvhv9cnVzUTaFFJF09A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@floating-ui/core/-/core-1.5.2.tgz}
     dependencies:
       '@floating-ui/utils': 0.1.6
     dev: false
 
   /@floating-ui/dom/1.5.3:
-    resolution: {integrity: sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.5.3.tgz}
     dependencies:
       '@floating-ui/core': 1.5.2
       '@floating-ui/utils': 0.1.6
     dev: false
 
   /@floating-ui/react-dom/2.0.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-Ke0oU3SeuABC2C4OFu2mSAwHIP5WUiV98O9YWoHV4Q5aT6E9k06DV0Khi5uYspR8xmmBk08t8ZDcz3TR3ARkEg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-Ke0oU3SeuABC2C4OFu2mSAwHIP5WUiV98O9YWoHV4Q5aT6E9k06DV0Khi5uYspR8xmmBk08t8ZDcz3TR3ARkEg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@floating-ui/react-dom/-/react-dom-2.0.0.tgz}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -1058,7 +1146,7 @@ packages:
     dev: false
 
   /@floating-ui/utils/0.1.6:
-    resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.6.tgz}
     dev: false
 
   /@humanwhocodes/config-array/0.11.13:
@@ -1104,13 +1192,13 @@ packages:
     dev: true
 
   /@iconify/tailwind/0.1.3:
-    resolution: {integrity: sha512-uVV49QtR9cZ9VLxrMSeW1E6iXWeBlpQ0z4aWx7B5WvGEE5OvCjloNYYqwZbZ/W+EsTcApzSm6szqcCVeb9pxDw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-uVV49QtR9cZ9VLxrMSeW1E6iXWeBlpQ0z4aWx7B5WvGEE5OvCjloNYYqwZbZ/W+EsTcApzSm6szqcCVeb9pxDw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@iconify/tailwind/-/tailwind-0.1.3.tgz}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types/2.0.0:
-    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz}
     dev: true
 
   /@innei/eslint-config-react-ts/0.9.7_typescript@5.1.3:
@@ -1204,7 +1292,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
 
   /@mx-space/api-client/1.4.1:
-    resolution: {integrity: sha512-+N4luI2SqX7v+vkKeecyCgu/WAnpiurZxOWp1oTgexyilRKWyeLYVYWPeYc346Hv+XRrf6gITEOObPY+KW5rIg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-+N4luI2SqX7v+vkKeecyCgu/WAnpiurZxOWp1oTgexyilRKWyeLYVYWPeYc346Hv+XRrf6gITEOObPY+KW5rIg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@mx-space/api-client/-/api-client-1.4.1.tgz}
     dev: false
 
   /@next/bundle-analyzer/13.2.1:
@@ -1376,24 +1464,24 @@ packages:
     dev: false
 
   /@tanstack/match-sorter-utils/8.8.4:
-    resolution: {integrity: sha512-rKH8LjZiszWEvmi01NR72QWZ8m4xmXre0OOwlRGnjU01Eqz/QnN+cqpty2PJ0efHblq09+KilvyR7lsbzmXVEw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-rKH8LjZiszWEvmi01NR72QWZ8m4xmXre0OOwlRGnjU01Eqz/QnN+cqpty2PJ0efHblq09+KilvyR7lsbzmXVEw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tanstack/match-sorter-utils/-/match-sorter-utils-8.8.4.tgz}
     engines: {node: '>=12'}
     dependencies:
       remove-accents: 0.4.2
     dev: false
 
   /@tanstack/query-core/4.29.11:
-    resolution: {integrity: sha512-8C+hF6SFAb/TlFZyS9FItgNwrw4PMa7YeX+KQYe2ZAiEz6uzg6yIr+QBzPkUwZ/L0bXvGd1sufTm3wotoz+GwQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-8C+hF6SFAb/TlFZyS9FItgNwrw4PMa7YeX+KQYe2ZAiEz6uzg6yIr+QBzPkUwZ/L0bXvGd1sufTm3wotoz+GwQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.29.11.tgz}
     dev: false
 
   /@tanstack/query-persist-client-core/4.29.11:
-    resolution: {integrity: sha512-CSmMZchr+446r79NJ/pjD2yfjqNqFV7k8BnqOq4yTZvXsaQLEIn3tsaU45IsPgs4N7g9OBfPUPDdapSQvck2WQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-CSmMZchr+446r79NJ/pjD2yfjqNqFV7k8BnqOq4yTZvXsaQLEIn3tsaU45IsPgs4N7g9OBfPUPDdapSQvck2WQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tanstack/query-persist-client-core/-/query-persist-client-core-4.29.11.tgz}
     dependencies:
       '@tanstack/query-core': 4.29.11
     dev: false
 
   /@tanstack/react-query-devtools/4.29.12_f6xbmyfm3jdupkpideh3h2ypeu:
-    resolution: {integrity: sha512-ug4YGQhMhh6QI8/sWJhjXxuvdeehxf1cyxpTifGMH5qreQ5ECHT6vzqG/aKvADQDzqLBGrF0q4wTDnRRYvvtrA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-ug4YGQhMhh6QI8/sWJhjXxuvdeehxf1cyxpTifGMH5qreQ5ECHT6vzqG/aKvADQDzqLBGrF0q4wTDnRRYvvtrA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-4.29.12.tgz}
     peerDependencies:
       '@tanstack/react-query': 4.29.12
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1408,7 +1496,7 @@ packages:
     dev: false
 
   /@tanstack/react-query-persist-client/4.29.12_5zxkwxlztchfmgne6tp4irt2zy:
-    resolution: {integrity: sha512-rh6zZJB+3j8lr+YsEkVadnqmUELmqNFZQzGGsHS5col/YOjYsMe9ppqaUjIMJ2aXnFXye50sbe4KxHhSGoaNVw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-rh6zZJB+3j8lr+YsEkVadnqmUELmqNFZQzGGsHS5col/YOjYsMe9ppqaUjIMJ2aXnFXye50sbe4KxHhSGoaNVw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tanstack/react-query-persist-client/-/react-query-persist-client-4.29.12.tgz}
     peerDependencies:
       '@tanstack/react-query': 4.29.12
     dependencies:
@@ -1417,7 +1505,7 @@ packages:
     dev: false
 
   /@tanstack/react-query/4.29.12_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-zhcN6+zF6cxprxhTHQajHGlvxgK8npnp9uLe9yaWhGc6sYcPWXzyO4raL4HomUzQOPzu3jLvkriJQ7BOrDM8vA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-zhcN6+zF6cxprxhTHQajHGlvxgK8npnp9uLe9yaWhGc6sYcPWXzyO4raL4HomUzQOPzu3jLvkriJQ7BOrDM8vA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.29.12.tgz}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1455,17 +1543,17 @@ packages:
     dev: true
 
   /@types/color-convert/2.0.3:
-    resolution: {integrity: sha512-2Q6wzrNiuEvYxVQqhh7sXM2mhIhvZR/Paq4FdsQkOMgWsCIkKvSGj8Le1/XalulrmgOzPMqNa0ix+ePY4hTrfg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-2Q6wzrNiuEvYxVQqhh7sXM2mhIhvZR/Paq4FdsQkOMgWsCIkKvSGj8Le1/XalulrmgOzPMqNa0ix+ePY4hTrfg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/color-convert/-/color-convert-2.0.3.tgz}
     dependencies:
       '@types/color-name': 1.1.3
     dev: true
 
   /@types/color-name/1.1.3:
-    resolution: {integrity: sha512-87W6MJCKZYDhLAx/J1ikW8niMvmGRyY+rpUxWpL1cO7F8Uu5CHuQoFv+R0/L5pgNdW4jTyda42kv60uwVIPjLw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-87W6MJCKZYDhLAx/J1ikW8niMvmGRyY+rpUxWpL1cO7F8Uu5CHuQoFv+R0/L5pgNdW4jTyda42kv60uwVIPjLw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.3.tgz}
     dev: true
 
   /@types/color/3.0.3:
-    resolution: {integrity: sha512-X//qzJ3d3Zj82J9sC/C18ZY5f43utPbAJ6PhYt/M7uG6etcF6MRpKdN880KBy43B0BMzSfeT96MzrsNjFI3GbA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-X//qzJ3d3Zj82J9sC/C18ZY5f43utPbAJ6PhYt/M7uG6etcF6MRpKdN880KBy43B0BMzSfeT96MzrsNjFI3GbA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/color/-/color-3.0.3.tgz}
     dependencies:
       '@types/color-convert': 2.0.3
     dev: true
@@ -1478,7 +1566,7 @@ packages:
     dev: true
 
   /@types/js-cookie/3.0.6:
-    resolution: {integrity: sha512-wkw9yd1kEXOPnvEeEV1Go1MmxtBJL0RR79aOTAApecWFVu7w0NNXNqhcWgvw2YgZDYadliXkl14pa3WXw5jlCQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-wkw9yd1kEXOPnvEeEV1Go1MmxtBJL0RR79aOTAApecWFVu7w0NNXNqhcWgvw2YgZDYadliXkl14pa3WXw5jlCQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-3.0.6.tgz}
     dev: true
 
   /@types/json-schema/7.0.15:
@@ -1514,13 +1602,13 @@ packages:
     dev: true
 
   /@types/node/18.19.4:
-    resolution: {integrity: sha512-xNzlUhzoHotIsnFoXmJB+yWmBvFZgKCI9TtPIEdYIMM1KWfwuY8zh7wvc1u1OAXlC7dlf6mZVx/s+Y5KfFz19A==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-xNzlUhzoHotIsnFoXmJB+yWmBvFZgKCI9TtPIEdYIMM1KWfwuY8zh7wvc1u1OAXlC7dlf6mZVx/s+Y5KfFz19A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/node/-/node-18.19.4.tgz}
     dependencies:
       undici-types: 5.26.5
     dev: true
 
   /@types/node/20.2.5:
-    resolution: {integrity: sha512-JJulVEQXmiY9Px5axXHeYGLSjhkZEnD+MDPDGbCbIAbMslkKwmygtZFy1X6s/075Yo94sf8GuSlFfPzysQrWZQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-JJulVEQXmiY9Px5axXHeYGLSjhkZEnD+MDPDGbCbIAbMslkKwmygtZFy1X6s/075Yo94sf8GuSlFfPzysQrWZQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/node/-/node-20.2.5.tgz}
     dev: true
 
   /@types/parse-author/2.0.3:
@@ -1532,7 +1620,7 @@ packages:
     dev: true
 
   /@types/prop-types/15.7.11:
-    resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.11.tgz}
     dev: true
 
   /@types/ps-tree/1.1.6:
@@ -1552,7 +1640,7 @@ packages:
     dev: true
 
   /@types/react/18.2.9:
-    resolution: {integrity: sha512-pL3JAesUkF7PEQGxh5XOwdXGV907te6m1/Qe1ERJLgomojS6Ne790QiA7GUl434JEkFA2aAaB6qJ5z4e1zJn/w==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-pL3JAesUkF7PEQGxh5XOwdXGV907te6m1/Qe1ERJLgomojS6Ne790QiA7GUl434JEkFA2aAaB6qJ5z4e1zJn/w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/react/-/react-18.2.9.tgz}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -1560,11 +1648,11 @@ packages:
     dev: true
 
   /@types/remove-markdown/0.3.4:
-    resolution: {integrity: sha512-i753EH/p02bw7bLlpfS/4CV1rdikbGiLabWyVsAvsFid3cA5RNU1frG7JycgY+NSnFwtoGlElvZVceCytecTDA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-i753EH/p02bw7bLlpfS/4CV1rdikbGiLabWyVsAvsFid3cA5RNU1frG7JycgY+NSnFwtoGlElvZVceCytecTDA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/remove-markdown/-/remove-markdown-0.3.4.tgz}
     dev: true
 
   /@types/scheduler/0.16.8:
-    resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.8.tgz}
     dev: true
 
   /@types/semver/7.5.6:
@@ -1940,7 +2028,7 @@ packages:
     dev: true
 
   /autoprefixer/10.4.14_postcss@8.4.32:
-    resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.14.tgz}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -1970,7 +2058,7 @@ packages:
     dev: false
 
   /balanced-match/1.0.2:
-    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -1984,7 +2072,7 @@ packages:
     dev: true
 
   /brace-expansion/2.0.1:
-    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
     dependencies:
       balanced-match: 1.0.2
 
@@ -1995,7 +2083,7 @@ packages:
       fill-range: 7.0.1
 
   /browserslist/4.22.2:
-    resolution: {integrity: sha512-0UgcrvQmBDvZHFGdYUehrCNIazki7/lUP3kkoi/r3YB2amZbFM9J43ZRkJTXBUZK4gmx56+Sqk9+Vs9mwZx9+A==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-0UgcrvQmBDvZHFGdYUehrCNIazki7/lUP3kkoi/r3YB2amZbFM9J43ZRkJTXBUZK4gmx56+Sqk9+Vs9mwZx9+A==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
@@ -2038,7 +2126,7 @@ packages:
     engines: {node: '>= 6'}
 
   /caniuse-lite/1.0.30001572:
-    resolution: {integrity: sha512-1Pbh5FLmn5y4+QhNyJE9j3/7dK44dGB83/ZMjv/qJk86TvDbjk0LosiZo0i0WB0Vx607qMX9jYrn1VLHCkN4rw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-1Pbh5FLmn5y4+QhNyJE9j3/7dK44dGB83/ZMjv/qJk86TvDbjk0LosiZo0i0WB0Vx607qMX9jYrn1VLHCkN4rw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001572.tgz}
 
   /chalk/2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -2120,7 +2208,7 @@ packages:
     dev: true
 
   /color-convert/2.0.1:
-    resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/color-convert/-/color-convert-2.0.1.tgz}
     engines: {node: '>=7.0.0'}
     dependencies:
       color-name: 1.1.4
@@ -2130,17 +2218,17 @@ packages:
     dev: true
 
   /color-name/1.1.4:
-    resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz}
 
   /color-string/1.9.1:
-    resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/color-string/-/color-string-1.9.1.tgz}
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
     dev: true
 
   /color/4.2.3:
-    resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/color/-/color-4.2.3.tgz}
     engines: {node: '>=12.5.0'}
     dependencies:
       color-convert: 2.0.1
@@ -2148,7 +2236,7 @@ packages:
     dev: true
 
   /colord/2.9.3:
-    resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/colord/-/colord-2.9.3.tgz}
     dev: false
 
   /colorette/2.0.20:
@@ -2185,7 +2273,7 @@ packages:
     dev: true
 
   /copy-anything/3.0.5:
-    resolution: {integrity: sha512-yCEafptTtb4bk7GLEQoM8KVJpxAfdBJYaXyzQEgQQQgYrZiDp8SJmGKlYza6CYjEDNstAdNdKA3UuoULlEbS6w==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-yCEafptTtb4bk7GLEQoM8KVJpxAfdBJYaXyzQEgQQQgYrZiDp8SJmGKlYza6CYjEDNstAdNdKA3UuoULlEbS6w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/copy-anything/-/copy-anything-3.0.5.tgz}
     engines: {node: '>=12.13'}
     dependencies:
       is-what: 4.1.16
@@ -2250,7 +2338,7 @@ packages:
     dev: true
 
   /css-selector-tokenizer/0.8.0:
-    resolution: {integrity: sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/css-selector-tokenizer/-/css-selector-tokenizer-0.8.0.tgz}
     dependencies:
       cssesc: 3.0.0
       fastparse: 1.1.2
@@ -2261,16 +2349,16 @@ packages:
     dev: true
 
   /cssesc/3.0.0:
-    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz}
     engines: {node: '>=4'}
     hasBin: true
 
   /csstype/3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/csstype/-/csstype-3.1.3.tgz}
     dev: true
 
   /daisyui/3.0.22_postcss@8.4.32:
-    resolution: {integrity: sha512-2xdRxQUUB+O0Mcww65QMwwo0fjnos4JmyLhX6F4WxWTngjy9eYyxdQChtsJB3GUl0jNYdZfmnK48gJNyhMBX8Q==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-2xdRxQUUB+O0Mcww65QMwwo0fjnos4JmyLhX6F4WxWTngjy9eYyxdQChtsJB3GUl0jNYdZfmnK48gJNyhMBX8Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/daisyui/-/daisyui-3.0.22.tgz}
     engines: {node: '>=16.9.0'}
     peerDependencies:
       postcss: ^8
@@ -2290,7 +2378,7 @@ packages:
     dev: true
 
   /dayjs/1.11.7:
-    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.7.tgz}
     dev: false
 
   /debug/3.2.7:
@@ -2388,7 +2476,7 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
   /electron-to-chromium/1.4.616:
-    resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -2541,7 +2629,7 @@ packages:
     dev: true
 
   /escalade/3.1.1:
-    resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
     engines: {node: '>=6'}
     dev: true
 
@@ -2922,7 +3010,7 @@ packages:
     dev: true
 
   /fastparse/1.1.2:
-    resolution: {integrity: sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz}
     dev: false
 
   /fastq/1.16.0:
@@ -3012,7 +3100,7 @@ packages:
     dev: true
 
   /fraction.js/4.3.7:
-    resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.3.7.tgz}
     dev: true
 
   /framer-motion/10.16.16_biqbaboplfbrettd7655fr4n2y:
@@ -3271,7 +3359,7 @@ packages:
     dev: true
 
   /idb-keyval/6.2.1:
-    resolution: {integrity: sha512-8Sb3veuYCyrZL+VBt9LJfZjLUPWVvqn8tG28VqYNFCo43KHcKuq+b4EiXGeuaLAQWL2YmyDgMp2aSpH9JHsEQg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-8Sb3veuYCyrZL+VBt9LJfZjLUPWVvqn8tG28VqYNFCo43KHcKuq+b4EiXGeuaLAQWL2YmyDgMp2aSpH9JHsEQg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/idb-keyval/-/idb-keyval-6.2.1.tgz}
     dev: false
 
   /ignore/5.3.0:
@@ -3334,7 +3422,7 @@ packages:
     dev: true
 
   /is-arrayish/0.3.2:
-    resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz}
     dev: true
 
   /is-async-function/2.0.0:
@@ -3505,7 +3593,7 @@ packages:
     dev: true
 
   /is-what/4.1.16:
-    resolution: {integrity: sha512-ZhMwEosbFJkA0YhFnNDgTM4ZxDRsS6HqTo7qsZM08fehyRYIYa0yHu5R6mgo1n/8MgaPBXiPimPD77baVFYg+A==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-ZhMwEosbFJkA0YhFnNDgTM4ZxDRsS6HqTo7qsZM08fehyRYIYa0yHu5R6mgo1n/8MgaPBXiPimPD77baVFYg+A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/is-what/-/is-what-4.1.16.tgz}
     engines: {node: '>=12.13'}
     dev: false
 
@@ -3543,7 +3631,7 @@ packages:
     hasBin: true
 
   /jotai/2.1.1_react@18.2.0:
-    resolution: {integrity: sha512-LaaiuSaq+6XkwkrCtCkczyFVZOXe0dfjAFN4DVMsSZSRv/A/4xuLHnlpHMEDqvngjWYBotTIrnQ7OogMkUE6wA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-LaaiuSaq+6XkwkrCtCkczyFVZOXe0dfjAFN4DVMsSZSRv/A/4xuLHnlpHMEDqvngjWYBotTIrnQ7OogMkUE6wA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/jotai/-/jotai-2.1.1.tgz}
     engines: {node: '>=12.20.0'}
     peerDependencies:
       react: '>=17.0.0'
@@ -3560,7 +3648,7 @@ packages:
     dev: true
 
   /js-cookie/3.0.5:
-    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.5.tgz}
     engines: {node: '>=14'}
     dev: false
 
@@ -3922,7 +4010,7 @@ packages:
     dev: true
 
   /minimatch/9.0.3:
-    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       brace-expansion: 2.0.1
@@ -3964,7 +4052,7 @@ packages:
     dev: true
 
   /next-themes/0.2.1_3vryta7zmbcsw4rrqf4axjqggm:
-    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/next-themes/-/next-themes-0.2.1.tgz}
     peerDependencies:
       next: '*'
       react: '*'
@@ -4034,7 +4122,7 @@ packages:
     dev: true
 
   /node-releases/2.0.14:
-    resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
     dev: true
 
   /normalize-path/3.0.0:
@@ -4042,7 +4130,7 @@ packages:
     engines: {node: '>=0.10.0'}
 
   /normalize-range/0.1.2:
-    resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -4515,15 +4603,6 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-media-minmax/5.0.0_postcss@8.4.32:
-    resolution: {integrity: sha512-yDUvFf9QdFZTuCUg0g0uNSHVlJ5X1lSzDZjPSFaiCWvjgsvu8vEVxtahPrLMinIDEEGnx6cBe6iqdx5YWz08wQ==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      postcss: 8.4.32
-    dev: true
-
   /postcss-nested/6.0.1_postcss@8.4.32:
     resolution: {integrity: sha512-mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==}
     engines: {node: '>=12.0'}
@@ -4544,9 +4623,9 @@ packages:
       postcss-selector-parser: 6.0.15
     dev: true
 
-  /postcss-opacity-percentage/1.1.3_postcss@8.4.32:
-    resolution: {integrity: sha512-An6Ba4pHBiDtyVpSLymUUERMo2cU7s+Obz6BTrS+gxkbnSBNKSuD0AVUc+CpBMrpVPKKfoVz0WQCX+Tnst0i4A==}
-    engines: {node: ^12 || ^14 || >=16}
+  /postcss-opacity-percentage/2.0.0_postcss@8.4.32:
+    resolution: {integrity: sha512-lyDrCOtntq5Y1JZpBFzIWm2wG9kbEdujpNt4NLannF+J9c8CgFIzPa80YQfdza+Y+yFfzbYj/rfoOsYsooUWTQ==}
+    engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.2
     dependencies:
@@ -4581,26 +4660,30 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-preset-env/8.0.1_postcss@8.4.32:
-    resolution: {integrity: sha512-IUbymw0JlUbyVG+I85963PNWgPp3KhnFa1sxU7M/2dGthxV8e297P0VV5W9XcyypoH4hirH2fp1c6fmqh6YnSg==}
+  /postcss-preset-env/8.5.1_postcss@8.4.32:
+    resolution: {integrity: sha512-qhWnJJjP6ArLUINWJ38t6Aftxnv9NW6cXK0NuwcLCcRilbuw72dSFLkCVUJeCfHGgJiKzX+pnhkGiki0PEynWg==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
     dependencies:
       '@csstools/postcss-cascade-layers': 3.0.1_postcss@8.4.32
       '@csstools/postcss-color-function': 2.2.3_postcss@8.4.32
+      '@csstools/postcss-color-mix-function': 1.0.3_postcss@8.4.32
       '@csstools/postcss-font-format-keywords': 2.0.2_postcss@8.4.32
+      '@csstools/postcss-gradients-interpolation-method': 3.0.6_postcss@8.4.32
       '@csstools/postcss-hwb-function': 2.2.2_postcss@8.4.32
       '@csstools/postcss-ic-unit': 2.0.4_postcss@8.4.32
       '@csstools/postcss-is-pseudo-class': 3.2.1_postcss@8.4.32
       '@csstools/postcss-logical-float-and-clear': 1.0.1_postcss@8.4.32
       '@csstools/postcss-logical-resize': 1.0.1_postcss@8.4.32
       '@csstools/postcss-logical-viewport-units': 1.0.3_postcss@8.4.32
+      '@csstools/postcss-media-minmax': 1.1.2_postcss@8.4.32
       '@csstools/postcss-media-queries-aspect-ratio-number-values': 1.0.4_postcss@8.4.32
       '@csstools/postcss-nested-calc': 2.0.2_postcss@8.4.32
       '@csstools/postcss-normalize-display-values': 2.0.1_postcss@8.4.32
       '@csstools/postcss-oklab-function': 2.2.3_postcss@8.4.32
       '@csstools/postcss-progressive-custom-properties': 2.3.0_postcss@8.4.32
+      '@csstools/postcss-relative-color-syntax': 1.0.2_postcss@8.4.32
       '@csstools/postcss-scope-pseudo-class': 2.0.2_postcss@8.4.32
       '@csstools/postcss-stepped-value-functions': 2.1.1_postcss@8.4.32
       '@csstools/postcss-text-decoration-shorthand': 2.2.4_postcss@8.4.32
@@ -4631,9 +4714,8 @@ packages:
       postcss-initial: 4.0.1_postcss@8.4.32
       postcss-lab-function: 5.2.3_postcss@8.4.32
       postcss-logical: 6.2.0_postcss@8.4.32
-      postcss-media-minmax: 5.0.0_postcss@8.4.32
       postcss-nesting: 11.3.0_postcss@8.4.32
-      postcss-opacity-percentage: 1.1.3_postcss@8.4.32
+      postcss-opacity-percentage: 2.0.0_postcss@8.4.32
       postcss-overflow-shorthand: 4.0.1_postcss@8.4.32
       postcss-page-break: 3.0.4_postcss@8.4.32
       postcss-place: 8.0.1_postcss@8.4.32
@@ -4644,7 +4726,7 @@ packages:
     dev: true
 
   /postcss-prune-var/1.1.1:
-    resolution: {integrity: sha512-rQS389fV24ohdWYaMjs5PI9eV4vJr6u8qb/8oijomnvOh9Ceytrr1ZMLBt6bJzhH1eqDrFWceXp9SQ5NUPEwCg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-rQS389fV24ohdWYaMjs5PI9eV4vJr6u8qb/8oijomnvOh9Ceytrr1ZMLBt6bJzhH1eqDrFWceXp9SQ5NUPEwCg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/postcss-prune-var/-/postcss-prune-var-1.1.1.tgz}
     dependencies:
       minimatch: 9.0.3
     dev: true
@@ -4685,7 +4767,7 @@ packages:
       util-deprecate: 1.0.2
 
   /postcss-value-parser/4.2.0:
-    resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
   /postcss/8.4.14:
     resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
@@ -4831,7 +4913,7 @@ packages:
     dev: true
 
   /remove-accents/0.4.2:
-    resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/remove-accents/-/remove-accents-0.4.2.tgz}
     dev: false
 
   /remove-markdown/0.5.0:
@@ -4994,7 +5076,7 @@ packages:
     engines: {node: '>=14'}
 
   /simple-swizzle/0.2.2:
-    resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz}
     dependencies:
       is-arrayish: 0.3.2
     dev: true
@@ -5227,7 +5309,7 @@ packages:
       ts-interface-checker: 0.1.13
 
   /superjson/1.13.3:
-    resolution: {integrity: sha512-mJiVjfd2vokfDxsQPOwJ/PtanO87LhpYY88ubI5dUB1Ab58Txbyje3+jpm+/83R/fevaq/107NNhtYBLuoTrFg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-mJiVjfd2vokfDxsQPOwJ/PtanO87LhpYY88ubI5dUB1Ab58Txbyje3+jpm+/83R/fevaq/107NNhtYBLuoTrFg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/superjson/-/superjson-1.13.3.tgz}
     engines: {node: '>=10'}
     dependencies:
       copy-anything: 3.0.5
@@ -5252,7 +5334,7 @@ packages:
     engines: {node: '>= 0.4'}
 
   /tailwindcss-variable-colors/0.0.1_tailwindcss@3.4.0:
-    resolution: {integrity: sha512-LcEwheZC0uCKDQk2nLMpxc9BL8HRtU0TBhXbGU+nasmXXTQXWO5YXCm/XyoRBzUYkRwkIbRiP3NH0jhOUoDwDA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-LcEwheZC0uCKDQk2nLMpxc9BL8HRtU0TBhXbGU+nasmXXTQXWO5YXCm/XyoRBzUYkRwkIbRiP3NH0jhOUoDwDA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/tailwindcss-variable-colors/-/tailwindcss-variable-colors-0.0.1.tgz}
     peerDependencies:
       tailwindcss: '>=3.3.0'
     dependencies:
@@ -5460,7 +5542,7 @@ packages:
     dev: true
 
   /typescript/5.1.3:
-    resolution: {integrity: sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/typescript/-/typescript-5.1.3.tgz}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
@@ -5503,7 +5585,7 @@ packages:
     dev: true
 
   /update-browserslist-db/1.0.13_browserslist@4.22.2:
-    resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -5520,7 +5602,7 @@ packages:
     dev: true
 
   /use-sync-external-store/1.2.0_react@18.2.0:
-    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==, registry: https://registry.yarnpkg.com/}
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
