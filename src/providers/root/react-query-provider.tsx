@@ -37,26 +37,29 @@ export const ReactQueryProvider = ({ children }: PropsWithChildren) => {
             refetchIntervalInBackground: false,
           },
         },
-      }));
+      })
+  );
 
-      return (
-        <PersistQueryClientProvider
-        client={queryClient}
-        persistOptions={{
-            persister,
-            dehydrateOptions: {
-                shouldDehydrateQuery: (query) => {
-                    const queryIsReadyForPersistance = query.state.status === 'success'
-                    if (queryIsReadyForPersistance) return !((query.state?.data as any)?.pages?.length > 1) // TODO: What the fuck???没看懂
-                    else {
-                        return false
-                    }
-                } 
+  return (
+    <PersistQueryClientProvider
+      client={queryClient}
+      persistOptions={{
+        persister,
+        dehydrateOptions: {
+          shouldDehydrateQuery: (query) => {
+            const queryIsReadyForPersistance = query.state.status === "success";
+            if (queryIsReadyForPersistance)
+              return !(
+                (query.state?.data as any)?.pages?.length > 1
+              ); // TODO: What the fuck???没看懂
+            else {
+              return false;
             }
-        }}
-        >
-            {children}
-        </PersistQueryClientProvider>
-      )
+          },
+        },
+      }}
+    >
+      {children}
+    </PersistQueryClientProvider>
   );
 };

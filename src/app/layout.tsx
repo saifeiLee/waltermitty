@@ -1,12 +1,12 @@
 "use client";
 import "../styles/index.css";
 import { dehydrate } from "@tanstack/react-query";
-import { headers } from "next/headers";
+import { headers } from "next/dist/client/components/headers";
 import { queries } from "~/queries/definition";
 import { getQueryClient } from "~/utils/query-client.server";
 import { $axios } from "~/utils/request";
 
-import { Providers } from "./providers";
+import { Providers } from "../providers/root";
 import { Hydrate } from "./hydrate";
 
 export default async function RootLayout({
