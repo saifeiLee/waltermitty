@@ -109,7 +109,7 @@
     "postcss-preset-env": "8.4.2",
     "postcss-prune-var": "1.1.1",
     "prettier": "2.8.8",
-    "rimraf": "5.0.1",
+    "rimraf": "5.0.5",
     "tailwindcss": "^3.3.2",
     "tailwindcss-variable-colors": "0.0.1",
     "tilg": "0.1.1",
