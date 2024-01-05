@@ -60,7 +60,7 @@
     "@tanstack/react-query": "4.29.12",
     "@tanstack/react-query-devtools": "4.29.12",
     "@tanstack/react-query-persist-client": "4.29.12",
-    "axios": "1.4.0",
+    "axios": "1.6.5",
     "daisyui": "3.0.22",
     "dayjs": "1.11.8",
     "framer-motion": "^10.12.16",
